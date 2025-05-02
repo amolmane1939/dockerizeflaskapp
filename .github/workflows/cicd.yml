@@ -24,7 +24,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest tests/test_app.py --disable-warnings -q --tb=short
+          pytest
 
   build-and-push-docker-image:
     needs: build-and-test
